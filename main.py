@@ -56,8 +56,7 @@ class RegistroProdutos():
                     cell.value = valor_novo
                 
 
-# teste = RegistroProdutos(1, 'pastel', 10.0, 15)
-# teste.RegistraProduto()
+
 
 
 fontFormat = Font(name='Arial', size= 11, bold=True)
@@ -110,6 +109,9 @@ borda_interna = Border(
 for row in produto_page.iter_rows(max_row=produto_page.max_row):
     for cell in row:
         cell.border = borda_interna
+
+teste = RegistroProdutos(1, 'pastel', 10.0, 15)
+teste.RegistraProduto()
 
 book.save('Planilha de Produtos.xlsx')
 
